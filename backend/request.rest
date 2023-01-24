@@ -1,0 +1,28 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjQsIm5hbWEiOiJBcnlhIiwiZW1haWwiOiJhcnlhMTJAZ21haWwuY29tIiwiaWF0IjoxNjc0NTMxMDU3LCJleHAiOjE2NzQ1MzEwODd9.o5KYJt9cM8B7vq03F0a3SXTbQ3HhH2DAcUT3bRnFSIU
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "nama": "Arya",
+    "email": "arya12@gmail.com",
+    "password": "aaarya78",
+    "confpassword": "aaarya78"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "arya12@gmail.com",
+    "password": "aaarya78"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
