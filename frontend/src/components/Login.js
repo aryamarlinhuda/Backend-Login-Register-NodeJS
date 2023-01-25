@@ -6,7 +6,7 @@ const Login = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [msg, setMsg] = useState('');
-    const navigaterea = useNavigate();
+    const navigate = useNavigate();
 
     const Auth = async (e) => {
         e.preventDefault();
@@ -15,7 +15,7 @@ const Login = () => {
                 email: email,
                 password: password
             });
-            navigaterea.push("/dashboard");
+            navigate("/dashboard");
         } catch (error) {
             if (error.response) {
                 setMsg(error.response.data.msg);
