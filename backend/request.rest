@@ -9,7 +9,7 @@ Content-Type: application/json
     "nama": "Arya",
     "email": "arya12@gmail.com",
     "password": "aaarya78",
-    "confpassword": "aaarya78"
+    "confpassword": "aarya78"
 }
 
 ###
