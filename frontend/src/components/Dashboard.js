@@ -38,7 +38,7 @@ const Dashboard = () => {
             config.headers.Authorization = `Bearer ${response.data.accessToken}`;
             setToken(response.data.accessToken);
             const decoded = jwt_decode(response.data.accessToken);
-            setNama(decoded.name);
+            setNama(decoded.nama);
             setExpire(decoded.exp);
         }
         return config;
@@ -57,7 +57,7 @@ const Dashboard = () => {
 
     return (
         <div className="container mt-5">
-            <h1>Welcome Back: {nama}</h1>
+            <h1>Welcome Back: { nama }</h1>
             <button onClick={getUsers} className="button is-info">Get Users</button>
             <table className="table is-striped is-fullwidth">
                 <thead>
